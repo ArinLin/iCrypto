@@ -33,6 +33,8 @@ class HomeController: UIViewController {
 
     // MARK: - UI Setup
     private func setView() {
+        self.navigationItem.title = "iCrypto"
+        
         view.addSubview(tableView)
     }
     
@@ -72,5 +74,10 @@ extension HomeController: UITableViewDataSource {
 extension HomeController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let coin = self.coins[indexPath.row]
+        let vm = CryptoControllerViewModel(coin)
+        let vc = CryptoController(vm)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
