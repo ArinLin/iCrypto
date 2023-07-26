@@ -39,19 +39,19 @@ class CryptoControllerViewModel {
     
     // MARK: - Computed Properties
     var rankLabel: String {
-        return "Rank: \(coin.cmc_rank)"
+        return "Rank: \(coin.rank)"
     }
     
     var priceLabel: String {
-        return "Price: $\(coin.quote.CAD.price) CAD"
+        return "Price: $\(coin.pricingData.CAD.price) CAD"
     }
     
     var marketCapLabel: String {
-        return "Market Cap: $\(coin.quote.CAD.market_cap) CAD"
+        return "Market Cap: $\(coin.pricingData.CAD.market_cap) CAD"
     }
     
     var maxSupplyLabel: String {
-        if let maxSupply = coin.max_supply {
+        if let maxSupply = coin.maxSupply {
             return "Max Supply: \(maxSupply)"
         } else {
             return "123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n"
