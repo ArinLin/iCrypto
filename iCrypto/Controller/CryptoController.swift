@@ -99,7 +99,7 @@ class CryptoController: UIViewController {
         rankLabel.text = viewModel.rankLabel
         priceLabel.text = viewModel.priceLabel
         marketCapLabel.text = viewModel.marketCapLabel
-        maxSupplyLabel.text = viewModel.maxSupplyLabel ?? "123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n"
+        maxSupplyLabel.text = viewModel.maxSupplyLabel 
         self.coinLogo.sd_setImage(with: self.viewModel.coin.logoURL)
         
 //        let imageData = try? Data(contentsOf: viewModel.coin.logoURL!)

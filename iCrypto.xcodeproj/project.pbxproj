@@ -79,12 +79,10 @@
 				840DDD702A6EAE5000CDE18B /* Application */,
 				8437B4BD2A6FBE02006991CD /* Controller */,
 				8437B4BC2A6FBDF8006991CD /* View */,
-				840DDD712A6EAEC300CDE18B /* Constants.swift */,
+				848CA8492A72DBB7007224CA /* Supporting */,
 				8420EA762A7141E6006AC806 /* API */,
 				8437B4C22A70121A006991CD /* ViewModel */,
 				8437B4BB2A6FBDE9006991CD /* Models */,
-				840DDD652A6EAAA500CDE18B /* Assets.xcassets */,
-				840DDD672A6EAAA500CDE18B /* LaunchScreen.storyboard */,
 				840DDD6A2A6EAAA500CDE18B /* Info.plist */,
 			);
 			path = iCrypto;
@@ -142,6 +140,16 @@
 				8440713C2A718246009B77E2 /* HomeControllerViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		848CA8492A72DBB7007224CA /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				840DDD652A6EAAA500CDE18B /* Assets.xcassets */,
+				840DDD672A6EAAA500CDE18B /* LaunchScreen.storyboard */,
+				840DDD712A6EAEC300CDE18B /* Constants.swift */,
+			);
+			path = Supporting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

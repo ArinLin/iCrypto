@@ -91,6 +91,11 @@ class HomeController: UIViewController {
         self.navigationItem.searchController = searchController
         self.definesPresentationContext = false
         self.navigationItem.hidesSearchBarWhenScrolling = false
+        
+        self.searchController.searchBar.delegate = self
+        self.searchController.searchBar.showsBookmarkButton = true
+        
+        self.searchController.searchBar.setImage(UIImage(systemName: "line.horizontal.3.decrease"), for: .bookmark, state: .normal)
     }
     
     private func setConstraints() {
@@ -111,6 +116,12 @@ extension HomeController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         print("DEBUG PRINT:", searchController.searchBar.text)
         viewModel.updateSearchController(searchBarText: searchController.searchBar.text)
+    }
+}
+
+extension HomeController: UISearchBarDelegate {
+    func searchBarBookmarkButtonClicked(_ searchBar: UISearchBar) {
+        print("DEBUG PRINT:", "button clicked")
     }
 }
 

@@ -35,7 +35,7 @@ class CryptoControllerViewModel {
         if let maxSupply = coin.maxSupply {
             return "Max Supply: \(maxSupply)"
         } else {
-            return "123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n"
+            return ""
         }
     }
 }
