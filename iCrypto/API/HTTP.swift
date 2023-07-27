@@ -16,7 +16,7 @@ enum HTTP {
     enum Headers {
         enum Key: String {
             case contentType = "Content-Type"
-            case apiKey = "X-CMC_PRO_API_KEY"
+            case apiKey = "X-CMC_PRO_API_KEY" // переменная окружения
         }
         
         enum Value: String {

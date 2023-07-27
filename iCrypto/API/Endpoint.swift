@@ -70,12 +70,13 @@ enum Endpoint {
 
 
 extension URLRequest {
-    mutating func addValues (for endpoint: Endpoint) {
+    mutating func addValues(for endpoint: Endpoint) {
         switch endpoint {
         case .fetchCoins:
             self.setValue (HTTP.Headers.Value.applicationJson.rawValue, forHTTPHeaderField: HTTP.Headers.Key.contentType.rawValue)
             
             self.setValue(Constants.API_KEY, forHTTPHeaderField: HTTP.Headers.Key.apiKey.rawValue)
+            print(Constants.API_KEY)
         }
     }
 }
