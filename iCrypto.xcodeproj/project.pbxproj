@@ -22,6 +22,7 @@
 		844071392A7150A2009B77E2 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844071382A7150A2009B77E2 /* Endpoint.swift */; };
 		8440713B2A716934009B77E2 /* CoinService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440713A2A716934009B77E2 /* CoinService.swift */; };
 		8440713D2A718246009B77E2 /* HomeControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440713C2A718246009B77E2 /* HomeControllerViewModel.swift */; };
+		848CA8482A72BD21007224CA /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 848CA8472A72BD21007224CA /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848CA8482A72BD21007224CA /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +160,9 @@
 			dependencies = (
 			);
 			name = iCrypto;
+			packageProductDependencies = (
+				848CA8472A72BD21007224CA /* SDWebImage */,
+			);
 			productName = iCrypto;
 			productReference = 840DDD592A6EAAA400CDE18B /* iCrypto.app */;
 			productType = "com.apple.product-type.application";
@@ -186,6 +191,9 @@
 				Base,
 			);
 			mainGroup = 840DDD502A6EAAA400CDE18B;
+			packageReferences = (
+				848CA8462A72BD21007224CA /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 840DDD5A2A6EAAA400CDE18B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -438,6 +446,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		848CA8462A72BD21007224CA /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		848CA8472A72BD21007224CA /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 848CA8462A72BD21007224CA /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 840DDD512A6EAAA400CDE18B /* Project object */;
 }

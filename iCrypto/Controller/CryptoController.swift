@@ -100,12 +100,7 @@ class CryptoController: UIViewController {
         priceLabel.text = viewModel.priceLabel
         marketCapLabel.text = viewModel.marketCapLabel
         maxSupplyLabel.text = viewModel.maxSupplyLabel ?? "123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n"
-        
-        self.viewModel.onImageLoaded = { [weak self] logoImage in
-            DispatchQueue.main.async {
-                self?.coinLogo.image = logoImage
-            }
-        }
+        self.coinLogo.sd_setImage(with: self.viewModel.coin.logoURL)
         
 //        let imageData = try? Data(contentsOf: viewModel.coin.logoURL!)
 //        if let imageData = imageData {
